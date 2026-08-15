@@ -4,13 +4,325 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website Saya</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
+
   <body>
-    <header></header>
+    <header class="sticky-top">
+      <div class="container mt-4">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            <nav
+              class="navbar navbar-expand-lg bg-light rounded-pill shadow"
+              data-bs-theme="light"
+            >
+              <div class="container">
+                <a class="navbar-brand fw-semibold" href="#hero"
+                  >Theofani Hati</a
+                >
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#project">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <main>
-      <section id=""></section>
+      <section id="hero" class="pt-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+              <div class="row">
+                <div class="col-md-8">
+                  <h1 class="fw-bold">
+                    Hello, I'm <br />
+                    Theofani Hati<br />
+                    Kusumawardani
+                  </h1>
+                  <h2 class="text-muted"><span id="typed-text"></span></h2>
+                  <p class="fst-italic">
+                    "If your action inspires others to dream more, learn more,
+                    do more, and become more, you are a leader" <br />
+                    - Dolly Parton
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <img
+                    class="img-fluid rounded-circle border border-5 border-white shadow"
+                    style="width: 250px; height: 250px; object-fit: cover"
+                    src="/src/avatar.png"
+                    alt="hero avatar"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="pt-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+              <h4 class="fw-bold">About Me</h4>
+              <p>
+                Hi! I'm an Indonesian-based
+                <span class="fw-bold">Software Engineer</span> focusing
+                primarily on mobile development. My core stack revolves around
+                Kotlin and Jetpack Compose, though I'm always happy to explore
+                new tools and technologies when the project calls for it. <br />
+                Beyond mobile, I enjoy building out the web using Next.Js. I
+                like turning ideas and design into clean and responsive
+                interfaces.
+                <br />
+                I'm currently looking for onsite and remote opportunities where
+                I can learn, build, and work with both national and global
+                teams. When I'm away from the keyboard, you'll probably find me
+                exploring new novels, trying new recipes, or just enjoying a
+                quit day offline
+              </p>
+              <div class="text-center">
+                <img
+                  class="img-fluid rounded-4 border border-5 border-white shadow"
+                  style="max-height: 250px"
+                  src="/src/profile_photo.webp"
+                  alt="about photo"
+                />
+                <p class="py-2">Olla cute fellas! 🫶🏻</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="project" class="pt-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+              <h4 class="fw-bold mb-4">Projects</h4>
+
+              <!-- <div id="project-list" class="row g-4 mb-5"></div> -->
+
+              <!-- note: demo utk card bawaan  -->
+              <div class="row">
+                <div class="col-12 col-md-4">
+                  <div class="card">
+                    <img
+                      src="src/sitanihut_mobile.png"
+                      class="card-img-top"
+                      alt="projects image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Farmers Planting & Harvesting App
+                      </h5>
+                      <p class="card-text">
+                        An offline-first Android application built for the Dinas
+                        Kehutanan Provinsi Lampung for data reporting in areas
+                        with limited connectivity, automatically synchronizing
+                        once an internet connection restored
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                  <div class="card">
+                    <img
+                      src="src/iot_smartfarming.png"
+                      class="card-img-top"
+                      alt="projects image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Plant Watering System</h5>
+                      <p class="card-text">
+                        Automated plant watering system utilizing IoT sensors
+                        and microcontrollers ESP8266. Using the MQTT protocol
+                        for real-time data communication pipeline with a
+                        monitoring dashboard to visualize data.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                  <div class="card">
+                    <img
+                      src="src/journalit_website.png"
+                      class="card-img-top"
+                      alt="projects image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Farmers Planting & Harvesting App
+                      </h5>
+                      <p class="card-text">
+                        Monolithic full-stack web for digital journaling with
+                        Laravel + Tailwind. Built authentication and implemented
+                        seamless features for daily text entries and multimedia
+                        file uploads.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-5">
+        <div class="container text-center mt-5">
+          <h1>Let's grow together!</h1>
+          <p>
+            I'm always open to discussing new projects, creative ideas <br />
+            or opportunities to be part of your visions.
+          </p>
+          <div>
+            <a href="https://www.linkedin.com/in/theofani-hati/" class="btn">
+              <i class="bi bi-linkedin fs-4"></i>
+            </a>
+
+            <a href="https://github.com/theofanihati" class="btn">
+              <i class="bi bi-github fs-4"></i>
+            </a>
+
+            <a href="https://wa.me/6285273149861" class="btn">
+              <i class="bi bi-whatsapp fs-4"></i>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer class="bg-secondary text-light p-2 text-center" id="footer">
+      <div class="container">
+        <p>
+          &copy; 2026 Theofani Hati Kusumawardani | Designed with 💅🏻 using
+          <a
+            href="https://getbootstrap.com/"
+            class="text-light text-decoration-underline"
+            >Bootstrap
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      var typed = new Typed('#typed-text', {
+        strings: [
+          'Coding Teacher.',
+          'Software Engineer.',
+          'Android Developer.',
+        ],
+        typeSpeed: 60,
+        backSpeed: 40,
+        backDelay: 1500,
+        loop: true,
+      });
+    </script>
+
+    <!-- untuk array, loop -->
+    <!-- <script>
+      const projects = [
+        {
+          title: 'Farmers Planting & Harvesting App',
+          description:
+            'An offline-first Android application built for the Dinas Kehutanan Provinsi Lampung for data reporting in areas with limited connectivity, automatically synchronizing once an internet connection restored.',
+          tech: 'Android',
+          image: 'src/sitanihut_mobile.png',
+        },
+        {
+          title: 'Plant Watering System',
+          description:
+            'Automated plant watering system utilizing IoT sensors and microcontrollers ESP8266. Using the MQTT protocol for real-time data communication pipeline with a monitoring dashboard to visualize data.',
+          tech: 'IoT',
+          image: 'src/iot_smartfarming.png',
+        },
+        {
+          title: 'Journal It',
+          description:
+            'Monolithic full-stack web application for digital journaling with Laravel + Tailwind. Built secure user authentication and implemented seamless features for daily text entries and multimedia file uploads.',
+          tech: 'Laravel',
+          image: 'src/journalit_website.png',
+        },
+      ];
+
+      const projectList = document.getElementById('project-list');
+
+      projects.forEach((project) => {
+        projectList.innerHTML += `
+            <div class="col-12">
+            <div class="card shadow border-0 rounded-4">
+              <div class="row">
+                <div class="col-md-4">
+                  <img
+                    src="${project.image}"
+                    class="img-fluid rounded-4 w-100 h-100"
+                    style="object-fit: cover; max-height: 200px;"
+                    alt="project image"
+                  />
+                </div>
+
+                <div class="col-md-8">
+                  <div class="card-body p-4">
+                    <h4 class="card-title fw-bold">${project.title}</h4>
+                    <p class="card-text text-muted">${project.description}</p>
+                    <span
+                      class="badge bg-secondary text-white rounded-pill px-3 py-2"
+                    >
+                      ${project.tech}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          `;
+      });
+    </script> -->
   </body>
 </html>
